@@ -25,6 +25,14 @@
             50% {transform: scale(1);opacity: 1;}
             100%{transform: scale(5);opacity: 0.6;rotate:  360deg;}
         }
+        .tableRow{
+            display: flex;
+            column-gap: 2rem;
+        }
+        .tableRow > p:nth-child(1) {
+            width: 10rem;
+            text-align: end;
+        }
     </style>
 </head>
 <body>
@@ -33,7 +41,50 @@
     </div>
     <label for="">Enter url</label>
     <input id="url" type="text">
+    <input type="radio" value="desktop" checked name="strategy"><label for="">Desktop</label>
+    <input type="radio" value="mobile" name="strategy"><label for="">Mobile</label>
     <button id="analyzeBtn">Analyze</button>
+    <div style="display: flex;flex-direction: column;">
+        <div class="tableRow">
+            <p>Page Tested</p><p class="pageTested">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Overall Performance</p><p class="op">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Speed Index</p><p class="si">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>First contentful paint</p><p class="fcp">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>First meaningful paint</p><p class="fmp">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Largest contentful paint</p><p class="lcp">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Cumulative layout shift</p><p class="cls">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Server response score</p><p class="srs">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Server response time</p><p class="srt">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Dom size score</p><p class="dss">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Dom size</p><p class="ds">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Total weight score</p><p class="tws">Value</p>
+        </div>
+        <div  class="tableRow">
+            <p>Total weight</p><p class="tw">Value</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
